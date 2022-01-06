@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+   <div>
+     <UpcomingMovies />
+     <PopularMovies />
+     <TopratedMovies />
+     <NowPlaying />
+   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  
+import PopularMovies from '../components/PopularMovies.vue'
+import UpcomingMovies from '../components/UpcomingMovies.vue'
+import TopratedMovies from '../components/TopratedMovies.vue'
+import NowPlaying from '../components/NowPlaying.vue'
+  export default {
+    name: 'Home',
+    components: {
+    PopularMovies,
+    UpcomingMovies,
+    TopratedMovies,
+    NowPlaying
+    }
+    
   }
-}
 </script>
